@@ -79,19 +79,19 @@
         </main>
         <section class="articles">
             <article class="article">
-                <h2>How dose work Javascript?</h2>
+                <h2>How dose Javascript work?</h2>
                 <p>If we want to know how dose work javaScript then we have to know first of all JavaScript what type of language.JavaScript code work Top to bottom. JavaScript is interpreted language.JavaScript source not understand computer. Computer only read bytecode.Javascript can work or run browser engine (chrome V8 engine).JavaScript source code is passed through a program called a compailer, which translate it into bytecode then computer can understand and execute. JavaScript language compailation with using JIT(Just in time Compailer) JIT compailer made with interpreter and compailer both combaind.</p>
             </article>
-            <article>
-                <h2>How dose work Event loop?</h2>
+            <article class="article">
+                <h2>How dose Event loop work?</h2>
                 <p>
                     Event loop actually execute asynchronous functions. Event loop mainly controls call stacks and callback queue. Now we have to understand what is call stack and callback queue. call stack (LIFO) is like function stack call stack run only synchronous code. But a JavaScript file have a lots of synchronous functions an asynchronous functions.When call stack didn't execute asynchronous function(setTimeOut(functionName, delay)) synchronously that's why call stack passed to the web api/c++ api. Then web api send to sub callback(FIFO) queue then callback queue store these function.Now work Event Loop when callstack finished synchronous work when free callstack then start event loop and callback queue sent asynchronous functions to callstack then again callstack execute these functions.
                 </p>
             </article>
-            <article>
-                <h2>LocalStorage VS SessionStorage</h2>
+            <article class="article">
+                <h2>Localstorage VS Sessionstorage</h2>
                 <p>
-                    localstorage vs sessionstorage
+                    Localstorage and sessionstorage both are similar but they have some difference.Difference is while data in localstorage these data dose not expire. Sessionstorage similar localstorage but when we open a new tab and brows somthing then some data store in sessionstorage when we close the tab then sessionstorage data delete automaticaly.
                 </p>
             </article>
         </section>

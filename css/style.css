@@ -55,11 +55,15 @@ img {
 }
 /* article */
 .articles{
-  width: 85%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  
+}
+.article{
+  padding: 10px;
 }
 /* Post */
 .post {

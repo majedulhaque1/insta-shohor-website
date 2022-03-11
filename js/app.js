@@ -22,9 +22,11 @@ const addToLiked = (id) =>{
 }
 
 const reportPost = (id) => {
-  const remainingpost = posts.filter((post) => !reportedPostsId.includes(post.id));
+  const remainingpost = posts.filter((post) => reportedPostsId.includes(post.id));
+  console.log(remainingpost);
   reportedPostsId.push(id);
-    showPosts(remainingpost);
+  console.log(reportedPostsId.push.id);
+    showPosts(posts);
 };
 
 const displayContent = (text) => {
@@ -144,12 +146,9 @@ const showPosts = (posts) => {
 const displayLikedPosts = () => {
   document.getElementById( "liked" ).innerHTML = '';
     const likedPosts = getLikedPosts();
-    console.log(likedPosts);
     likedPosts.forEach((post) => {
-      console.log(post);
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
-        
     });
 };
 
